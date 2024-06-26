@@ -21,6 +21,7 @@
         text-align: center;
         margin: auto;
         margin-bottom: 20px;
+        width: 50%;
 
     }
 
@@ -32,11 +33,15 @@
     }
 
     thead {
-        background-color: aquamarine;
+        background-color: gray
     }
 
-    tr> td:hover {
-        background-color: lightblue;
+    tr>td:hover {
+        background-color: lightgray
+    }
+
+    tr.medias {
+        background-color: gray;
     }
 
     caption {
@@ -53,7 +58,7 @@
         <caption>
             Tabela 1: Mesclando letras
         </caption>
-        
+
         <tr>
             <td colspan="4">A</td>
             <td rowspan="4">B</td>
@@ -83,7 +88,7 @@
     </table>
 
     <table class="tabela2">
-        <caption style="width: 300px;">
+        <caption>
             Tabela 2: Mesclando Números
         </caption>
         <tr>
@@ -171,6 +176,91 @@
 
 
     </table>
+
+    <table class="tabela4">
+        <caption>
+            Tabela 4: Boletim de notas
+        </caption>
+
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2">Área</th>
+                <th scope="col" rowspan="2">Disciplina</th>
+                <th scope="colgroup" colspan="2">Notas</th>
+                <th scope="col" rowspan="2">Media</th>
+            </tr>
+            <tr>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="4">Exatas</th>
+                <td>Matemática</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+            </tr>
+
+            <tr>
+                <td>Física</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+
+            </tr>
+
+            <tr class="medias">
+                <th scope="row" colspan="4"> Média Exatas</th>
+                <td>x</td>
+            </tr>
+
+            <tr>
+                <th scope="rowgroup" rowspan="2"> Humanas</th>
+                <td>História</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Geografia</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+
+            </tr>
+
+            <tr class="medias">
+                <th scope="row" colspan="4"> Média Humanas</th>
+                <td>x</td>
+            </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+
 
 
 
